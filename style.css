@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    background: rgb(255, 255, 255);
+    /* color: white; */
+}
+
+.input-txt {
+    padding: 10px 25px;
+    border: none;
+    display: block;
+    font-size: 18px;
+    transition: all 1s;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+.input-txt::before:focus { 
+    content: '';
+    height: 2px;
+    position: absolute;
+    background-color: rgb(238, 0, 0); 
+    top: 110.9px;
+    left: 8.4px;
+    width: 240px;
+    transition: all .5s;
+    /* background-color: rgb(17, 0, 255); */
+    /* border-bottom-color: blue; */
+
+}
+.input-txt-anim{
+}
+
+.block__item {
+    display: block;
+}
+label {
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+
