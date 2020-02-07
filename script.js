@@ -1,19 +1,12 @@
-let nameProduct = document.querySelector(".name-product");
+const header__btn = document.querySelector(".header__btn"),
+    block__item = document.querySelector(".block__item"),
+    emailInput = document.querySelector("#email-input"),
+    emailTitle = document.querySelector(".email-title");
 
-let block__item = document.querySelector(".block__item");
-nameProduct.addEventListener("focus", event => {
-    console.log("input-text");
-    // nameProduct.classList.add("input-txt-anim");
+
+emailInput.addEventListener("focus", () => {
+    emailInput.setAttribute("placeholder",""); 
+    emailTitle.textContent = "E-mail для отправки чека";
 });
 
-// nameProduct.addEventListener("focus", event => {
-//     event.preventDefault();
-//     // alert("yes-focus")
-//     console.log(event);    
-//     
 
-// });
-
-// nameProduct.addEventListener("change", event => {
-//     block__item.style.backgroundColor =  'white';
-// })
