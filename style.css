@@ -18,12 +18,13 @@ body {
 .header__title {
     font-weight: normal;
 }
+
 .btn {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header__btn {
-    border-radius: 5px; 
+    border-radius: 5px;
     font-weight: 500;
     color: #fff;
     font-size: 1rem;
@@ -34,10 +35,11 @@ body {
     height: 35px;
     box-shadow: 0px 3px 2px rgb(80, 80, 80);
     transition: .1s;
-    transition-property: background,box-shadow;
+    transition-property: background, box-shadow;
 }
 
 .header__btn:hover {
+    cursor: pointer;
     background-color: rgb(7, 57, 175);
 }
 
@@ -56,7 +58,7 @@ body {
     border-bottom: 2px dotted gray;
     display: inline-block;
     min-width: 390px;
-    padding-bottom:7px;
+    padding-bottom: 7px;
 }
 
 .gray {
@@ -69,7 +71,7 @@ body {
 }
 
 .wrapper {
-    display: flex; 
+    display: flex;
 }
 
 .section__item-email {
@@ -87,34 +89,33 @@ body {
 }
 
 .email-title {
-    font-size: 0px;
+    font-size: 12px;
     color: gray;
     transition: all .5s;
-    display: none;
+    /* display: none; */
+    position: absolute;
+    /* display: block; */
+
 }
 
-.email-title-act {
-    position: absolute;
-    display: block;
-    background-color: red;
-}
 
 .form__btn {
     position: relative;
-    right: 1071px;
-    top: 65px;    
+    top: 65px;
     background-color: rgb(45, 177, 95);
     border: none;
+
     height: 35px;
     padding: 0 13px;
     border-radius: 5px;
-    font-size: 16px; 
+    font-size: 16px;
     transition: .2s;
-    transition-property: background,box-shadow;
+    transition-property: background, box-shadow;
 }
 
 .form__btn:hover {
-    background-color:rgb(16, 158, 70);
+    background-color: rgb(16, 158, 70);
+    cursor: pointer;
 }
 
 .form__btn:active {
@@ -130,7 +131,7 @@ body {
 }
 
 
-.form__fields > input {
+.form__fields>input {
     border: none;
     border-bottom: 1px solid gray;
     padding: 7px 0px;
@@ -139,15 +140,16 @@ body {
 }
 
 
-.form__fields > input:focus {
+.form__fields>input:focus {
     outline: none;
 }
 
-.form__fields > .title {
-    display: none;
+.form__fields>.ic-title {
+    display: inline-block;
+    position: absolute;
 }
 
-.form__fields input + input {
+.form__fields input+input {
     margin-left: 25px;
     min-width: 197px;
 }
@@ -158,9 +160,16 @@ body {
 }
 
 .view-amount__title {
-    display: inline-block;
-    margin: 7px 0;
-    
+    font-size: 16px;
+    transform: translateY(2px);
+    transition: transform .2s ease-in;
+    position: absolute;
+
+}
+
+.act-title {
+    transform: translateY(-20px);
+    font-size: 13px;
 }
 
 .input-count {
@@ -174,9 +183,83 @@ body {
 }
 
 span {
+    z-index: 1;
     color: gray;
-    font-size: 0px;
-    transition: all .5s;
-    /* display: none; */
+}
+input {
+    opacity: .9;
+}
+
+.general-sum {
+    font-size: 16px;
+}
+
+.code-rubl {
+    font-size: 16px;
+}
+
+
+.view-amount__sum {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    /* padding-bottom: 7px; */
+}
+
+
+.trash {
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    width: 23px;
+    padding: 25px 0 0 15px;
+}
+
+.ip-title {
     position: absolute;
+    left: 48.2%;
+    top: 23.5%;
+    transform: translateY(0px);
+    transition: all .3s;
+    display: inline-block;
+}
+
+
+
+.form__fields {
+    box-sizing: border-box;
+}
+
+
+.ic-title {
+    position: absolute;
+    left: 31.6%;
+    transform: translateY(12px);
+    transition: all .3s;
+    display: inline-block;
+}
+.ip-title_active {
+    transform: translateY(-7px);
+    font-size: 13px;
+    left: 31.5%;
+}
+
+.ic-title_active {
+    transform: translateY(-20px);
+    font-size: 13px;
+}
+
+.in-title {
+    position: absolute;
+    left: 1.1%;
+    top: 23.5%;
+    transform: translateY(0px);
+    transition: all .3s;
+    display: inline-block;
+}
+
+.in-title_active {
+    transform: translateY(-20px);
+    font-size: 13px;
 }

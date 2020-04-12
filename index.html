@@ -11,44 +11,33 @@
   <div class="container">
     <header class="header">
       <h3 class="header__title">Ручная печать чека</h3>
-      <button class="header__btn btn">Добавить</button>
+      <button class="header__btn btn-add">Добавить</button>
     </header>
   </div>
 
   <section class="section">
     <form action="" class="form">
+      <div class="app">
+
       
-      <div class="form__fields">
-        <input type="text" class="input-name" placeholder="Наименования">
-        <span class="title">Наименования</span>  
-        
-        <input type="text" class="input-count" placeholder="Количество">
-        <span class="title">Количество</span>
-        
-        <input type="text" class="input-price" placeholder="Цена">
-        <span class="title">Цена</span>
-        
-        <div class="view-amount">
-          <p class="view-amount__title">Сумма</p>
-          <input disabled class="view-amount__sum"></input>
-        </div>
+
       </div>
-      
       <div class="wrapper">
         <div class="section__item section__item-sum">
           <div class="border">
             <span class="sum-title gray">Итого</span><br>
-            <span class="code-rubl gray">&#8381;</span>
-            <span class="general-sum gray" id="general-sum">35</span>
+            <span class="code-rubl gray">₽</span>
+            <span class="general-sum gray" id="general-sum">0</span>
           </div>
         </div>
-      
+
         <div class="section__item section__item-email">
           <span class="email-title"></span>
           <input type="email" class="input-email" id="email-input" placeholder="E-mail для отправки чека">
         </div>
       </div>
-      <button class="form__btn btn-add" id="form__btn-add">Напечатать</button>
+      <button class="form__btn btn-write" id="form__btn-add">Напечатать</button>
+      
     </form>
   </section>
 
